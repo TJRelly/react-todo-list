@@ -1,0 +1,33 @@
+.TodoList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.TodoList-list {
+    padding: 1rem 2rem;
+}
+
+.TodoList ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.TodoList li {
+    text-align: start;
+}
+
+@media (max-width: 600px) {
+    .TodoList {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .TodoList {
+        display: flex;
+        flex-direction: column;
+    }
+}
